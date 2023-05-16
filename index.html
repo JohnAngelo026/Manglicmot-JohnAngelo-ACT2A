@@ -1,0 +1,167 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antiques Store || Inquire now</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <nav>
+        <div class="nav-container">
+            <!--Logo-->
+            <div class="logo-container">
+                <h1>
+                    The <br />
+                    Retro Shack
+                </h1>
+            </div>
+
+            <!--Menu-->
+            <div class="menu-container">
+                <button class="menu"><a href="#home">Home</a></button>
+                <button class="menu"><a href="#product">Product</a></button>
+                <button class="menu"><a href="#contact">Contact Us</a></button>
+            </div>
+            <!--Login signup button-->
+
+            <div class="menu-smallScreen">
+                <i class="uil uil-bars" onclick="openMenu()">
+                    <div class="menu-container2" id="menu-container2">
+                        <button class="menu"><a href="#home">Home</a></button>
+                        <div class="line" style="width: 100%; height: 1px; background-color: black"></div>
+                        <button class="menu"><a href="#product">Product</a></button>
+                        <div class="line" style="width: 100%; height: 1px; background-color: black"></div>
+                        <button class="menu"><a href="#contact">Contact Us</a></button>
+                        <div class="close" style="display: flex; justify-content: center" onclick="closeMenu()">
+                            <i class="uil uil-multiply" style="text-align: center"></i>
+                        </div>
+                    </div>  
+                </i>
+            </div>
+        </div>
+    </nav>
+    <button id="myBtn" title="Go to top" onclick="topFunction()" >^</button>
+
+    <!--MAIN BODY-->
+    <main>
+        <!--Home Section-->
+        <section class="home" id="home">
+            <!--Title-->
+            <div class="title-description">
+                <h1 style="font-size: 2rem; color: white">Welcome to</h1>
+                <div class="title">The Retro Shack</div>
+                <!--Description-->
+                <div class="description">
+                    <p>
+                        <b>Since 2023</b><br />The Retro Shack is a place where you can
+                        find vintage and antique items.
+                    </p>
+                </div>
+
+                <div class="learnmore">
+                    <button class="learn-more" onclick="openLearn()">Learn More</button>
+                    <div class="learn" id="learn">
+                        <div class="text">
+                            This website only intend to show the customers the items that
+                            can be seen in the physical storefront. Customers will be
+                            required go personally to see and purchase the real products.
+                            <br /><br />
+                            Thank you!
+                        </div>
+                        <button onclick="closeLearn()">Got it</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="welcome" id="welcome">
+            <div class="container"></div>
+        </section>
+
+        <!--Product Section-->
+        <section class="product" id="product">
+            <div class="product-title">
+                <h1>OUR PRODUCTS</h1>
+            </div>
+            <div class="products">
+                <a href="vase.html">
+                    <div class="prod item">
+                        <div>
+                            <img src="https://bidnextdoorimages.s3.amazonaws.com/2081-(5).jpg" alt="Antique Vases" />
+                            <h1>Vases</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="book.html">
+                    <div class="prod item">
+                        <div>
+                            <img src="https://i.ebayimg.com/images/g/gnkAAOSwBLlVZqhu/s-l1600.jpg" alt="antique Books" />
+                            <h1>Books</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="furnitures.html">
+                    <div class="prod item">
+                        <div>
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/details-of-vintage-furniture-royalty-free-image-1586449199.jpg"
+                                alt="Antique Furnitures" />
+                            <h1>Furnitures</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="souvenir.html">
+                    <div class="prod item">
+                        <div>
+                            <img src="https://media.karousell.com/media/photos/products/2023/1/9/12pcs_travel_souvenir_keychain_1673236035_363f22f7_progressive.jpg"
+                                alt="Antiques Jewelries" />
+                            <h1>Souvenirs</h1>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+        <!--Contact Section-->
+        <section class="contact" id="contact">
+                <!--Feedback-->
+                <div class="feedback">
+                    Leave us your message.
+                    <form action="https://formsubmit.co/573d5b113b847aab08950fe9a6fab9f7" method="POST">
+                        <input type="text" name="Name" placeholder="Full Name" required />
+                        <input type="email" name="Email" placeholder="Email" required />
+                        <textarea name="Message" placeholder="Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="footer">
+            <div class="contact-container">
+                <!--contact-->
+                <div class="info">
+                    <div class="infos">
+                        <i class="uil uil-envelope"><b>Email :</b><br />
+                            retroshacks@gmail.com</i>
+                    </div>
+                    <div class="infos">
+                        <i class="uil uil-phone"><b>Phone :</b><br />
+                            0912-345-6789</i>
+                    </div>
+                    <div class="infos">
+                        <i class="uil uil-location-pin-alt"></i><b>Location :</b><br />
+                        Olongapo City Sports Complex, Gordon College,Philippine, Lungsod
+                        ng Olongapo, Zambales
+                    </div>
+                </div> 
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
